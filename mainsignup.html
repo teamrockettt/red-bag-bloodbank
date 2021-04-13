@@ -2,41 +2,44 @@
 <html>
 <head>
 	<title>Main Login</title>
-	<link rel="stylesheet" type="text/css" href="../Project2/homeage.css">
+	<link rel="stylesheet" type="text/css" href="../Project2/homeage2.css">
 </head>
 <body>
-	<div class="banner">
-		<div class="navbar">
-			<p>Sign Up</p>
-			<a href="homepage.html"><img src="logo.png" class="logo"></a>
-		</div>
 		<div class="form-container">
-			<div class="cross">
-				<a href="homepage.html"><img src=""></a>
-			</div>
-			<form>
+			<form class="modal-content">
+			<div class="container">
+				<h1>Sign Up</h1>
+				<hr>
+				<p>Please fill in this form to create an account.</p>
 				<label class="form-item" for="fname">Firstname:</label>
-	    	    <input type="text" name="fname" placeholder="Firstname">
-	    	    <br><br>
+	    	    <input type="text" name="fname" placeholder=" Enter Firstname" required>
+	    	    <br>
 	    	    <label class="form-item" for="fname">Lastname:</label>
-	    	    <input type="text" name="lname" placeholder="Lastname">
-	    	    <br><br>
-		    <label class="form-item" for="blood group">Blood Group:</label>
-	    	    <input type="text" name="BG" placeholder="Blood Group">
-	    	    <br><br>
+	    	    <input type="text" name="lname" placeholder="Enter Lastname" required>
+	    	    <br>
 	    	    <label class="form-item" for="phone number">Phone no.:</label>
-	    	    <input type="number" name="Phone" placeholder="Phone number">
-	    	    <br><br>
+	    	    <input type="number" name="Phone" placeholder="Enter Phone number" required>
+	    	    <br>
 	    	    <label class="form-item" for="email-id">E-mail ID:</label>
-	    	    <input type="email" name="email-id" placeholder="e-mail">
-	    	    <br><br>
-	    	    <label class="form-item" for="Password">Password:</label>
-	    	    <input type="Password" name="Password" placeholder="Password">
-	    	    <br><br>
-	    	    <button class="button"><a href="mainlogin.html">Sign Up</a></button>
-	    	</form>
-	    	<div><a href="mainlogin.html">Already registered? Log in!</a></div>
-	    </div>
+	    	    <input type="text" name="email-id" placeholder="Enter e-mail" required>
+	    	    <br>
+	    	    <label class="form-item" for="Pwd">Password:</label>
+	    	    <input type="Password" name="Password" placeholder="Password" required>
+	    	    <br>
+	    	    <label>
+	    	        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+	    	    </label>
+	    	    <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+	    	    <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+                <div><p class="p1">Already registered? <a href="mainlogin.html">Log in!</a></p></div>
+
+	    	</div>
+	    </form>
+
 	</div>
+
 </body>
 </html>
