@@ -91,14 +91,19 @@ hr {
   margin-bottom: 25px;
 }
 
-/* The Close Button (x) */
-.close {
+.cross{
+  position: absolute;
+  right: 26%;
+  top: 10%;
+}
+
+.close{
   position: absolute;
   right: 35px;
   top: 15px;
-  font-size: 40px;
-  font-weight: bold;
   color: #f1f1f1;
+  width: 1cm;
+  height: 1cm;
 }
 
 .close:hover,
