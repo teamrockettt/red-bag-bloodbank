@@ -2,28 +2,34 @@
 <html>
 <head>
 	<title>Main Login</title>
-	<link rel="stylesheet" type="text/css" href="../Project2/homeage.css">
+	<link rel="stylesheet" type="text/css" href="../Project2/homeage3.css">
 </head>
 <body>
 	<div class="banner">
-		<div class="navbar">
-			<p>Login</p>
-			<a href="homepage.html"><img src="logo.png" class="logo"></a>
-		</div>
 		<div class="form-container">
 			<div class="cross">
-				<a href="homepage.html"><img src=""></a>
+				<a href="homepage.html"><img src="close.webp" class="close"></a>
 			</div>
-			<form>
-				<label class="form-item" for="fname">Username:</label>
-	    	    <input type="text" name="fname" placeholder="Username">
-	    	    <br><br>
-	    	    <label class="form-item" for="Password">Password:</label>
-	    	    <input type="Password" name="Password" placeholder="Password">
-	    	    <br><br>
-	    	    <button class="button">Login</button>
+			<form class="modal-content">
+				<div class="container">
+					<h1>Login</h1>
+					<hr>
+					<label class="form-item" for="fname">Username:</label>
+	    	        <input type="text" name="fname" placeholder="Username">
+	    	        <br>
+	    	        <label class="form-item" for="Password">Password:</label>
+	    	        <input type="Password" name="Password" placeholder="Password">
+	    	        <br>
+	    	        <label>
+	    	        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+	    	        </label>
+	    	        <div class="clearfix">
+	    	        	<a href="homepage.html"><button type="button" class="cancelbtn">Cancel</button></a>
+	    	        	<a href="mainlogin.html"><button type="submit" class="signupbtn">Log in</button></a>
+                    </div>
+                    <div>New to website? <a href="mainsignup.html">Sign Up!</a></div>
+                </div>
 	    	</form>
-	    	<div><a href="mainsignup.html">New to website? Sign Up!</a></div>
 	    </div>
 	</div>
 </body>
