@@ -25,6 +25,10 @@ h1{
   text-decoration: underline;
 }
 
+.p1{
+  text-align: center;
+}
+
 button {
   background-color: #4CAF50;
   color: white;
